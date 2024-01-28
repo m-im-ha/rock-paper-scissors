@@ -60,4 +60,4 @@ function game() {
   console.log(`Human's points : `,human_point);
   console.log(computer_point > human_point ? `Computer WINNER!!!.` : `Human WINNER!!!.`);
 }
-game();
+// game();
