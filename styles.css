@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+}
+
+h1,p,h3,h2 {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.point p {
+    font-size: 25px;
+}
+
+.down_arrow {
+    position: relative;
+    font-size: 50px;
+    top: 10px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+.choice {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.point {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:nth-child(1){
+    background-color: red;
+}
+button:nth-child(2){
+    background-color: green;
+}
+button:nth-child(3){
+    background-color: blue;
+}
