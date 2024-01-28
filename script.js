@@ -1,11 +1,11 @@
-function getComputerChoice() {
-  const choice_array = ["rock", "paper", "scissors"];
-  return choice_array[Math.floor(Math.random() * choice_array.length)];
-}
+// function getComputerChoice() {
+//   const choice_array = ["rock", "paper", "scissors"];
+//   return choice_array[Math.floor(Math.random() * choice_array.length)];
+// }
 // console.log(getComputerChoice());
 
-let computer_point = 0;
-let human_point = 0;
+// let computer_point = 0;
+// let human_point = 0;
 
 function round(playerSelection, computerSelection) {
   playerSelection = playerSelection.toLowerCase();
@@ -61,3 +61,24 @@ function game() {
   console.log(computer_point > human_point ? `Computer WINNER!!!.` : `Human WINNER!!!.`);
 }
 // game();
+
+const buttons = document.querySelectorAll('button');
+let round_winner = document.querySelector('h3');
+let game_winner = document.querySelector('h2');
+let human = document.querySelector(".human");
+let computer = document.querySelector(".computer");
+let computer_point = 0;
+let human_point = 0;
+
+function getComputerChoice() {
+  const choice_array = ["rock", "paper", "scissors"];
+  return choice_array[Math.floor(Math.random() * choice_array.length)];
+}
+
+
+buttons.forEach((btn)=>{
+  // console.log(btn);
+  btn.addEventListener('click',()=>{
+    // console.log(btn.classList.value);
+  })
+});
